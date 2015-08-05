@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} \.(gif|jpg|png)$ [NC]
+RewriteRule .* ./index.php?%{REQUEST_FILENAME}
