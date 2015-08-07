@@ -87,6 +87,8 @@ table {
 }
 
 
+
+
 .fa {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
@@ -112,16 +114,81 @@ table {
   content: "\f174";
 }
 
-.icon_head_a{background:  url(/img/logo_900.png) center center no-repeat;
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
-width:390px;
-height:137px;
-padding:12px;
-margin:0px auto;
+
+/*
+font-family: "museo-slab";
+ font-family: "proxima-nova";
+
+ */
+
+#savedate{
+    font: 400 26px/26px "proxima-nova", Helvetica, Arial, Sans-Serif;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 10px;
 }
+
+#date{
+    font: 600 60px/61px "proxima-nova", Helvetica, Arial, Sans-Serif;
+    text-transform: uppercase;
+    letter-spacing: 1.6px;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+#hotel{
+    font: 600 27px/27px "proxima-nova", Helvetica, Arial, Sans-Serif;
+    text-transform: uppercase;
+    letter-spacing: 1.6px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+#tickreg{
+    font: 200 17.4px/27px "proxima-nova", Helvetica, Arial, Sans-Serif;
+    font-style: italic;
+    /* letter-spacing: 1.6px; */
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+
+#emailme{
+    font: 500 13px/34px "proxima-nova", Helvetica, Arial, Sans-Serif;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    text-align: center;
+    border: 1px solid white;
+    display: block;
+    width: 156px;
+    margin: 0px auto;
+    text-decoration: none;
+    color:white;
+}
+
+
+a:hover #emailme{
+background-color: white;
+    color:black;
+}
+
+
+
+
+#pan-one-space{
+    display: block;
+    width: 1px;
+    height: 132px;
+    /* border: 1px solid white; */
+}
+
+#icon_head_a{
+    width: 287px;
+    margin: 0px auto 111px;
+    display: block;
+}
+
+
 
 
 .fpanel {
@@ -137,13 +204,15 @@ background-size: cover;
 
 
 
-#texas{width:100%;min-height:100px;
-padding:53px;
-background: black url(/img/c/ICON9Austin4.jpg) center center no-repeat;
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
+#texas{
+    width: 100%;
+    min-height: 100px;
+    padding: 40px;
+    background: black url(/img/c/ICON9Austin4.jpg) center center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 #watercolor{width:100%;min-height:100px;
@@ -178,6 +247,27 @@ background: black url(/img/c/black) center center no-repeat;
 background-size: cover;
 }
 
+
+#texas > ul.social > li{
+    float: left;
+    margin-right: 15px;
+    font-size: 24px;
+}
+#texas > ul.social > li:nth-child(3){margin-right:0px;}
+
+ul.social{
+    margin: 0px auto;
+    /* display: inline-block; */
+    width: 90px;
+}
+
+#texas > ul.social > li a{
+    color:white!important;
+}
+
+#texas > ul.social > li a:hover{
+    color:yellow!important;
+}
 
 
 
