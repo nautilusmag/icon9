@@ -1,3 +1,4 @@
+@import 'fonts.css';
 * {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -13,7 +14,7 @@ dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+figure, figcaption, footer, header,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -25,11 +26,13 @@ time, mark, audio, video {
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+footer, header,  menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;background-color:black;color:white;
+	line-height: 1;background-color:black;color: #fff;
+    /*-webkit-font-smoothing: antialiased;*/
+    /*-moz-osx-font-smoothing: grayscale;*/
 }
 ol, ul {
 	list-style: none;
@@ -122,14 +125,14 @@ font-family: "museo-slab";
  */
 
 #savedate{
-    font: 400 26px/26px "proxima-nova", Helvetica, Arial, Sans-Serif;
+    font: 400 41px/41px "proxima-nova", Helvetica, Arial, Sans-Serif;
     text-transform: uppercase;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 13px;
 }
 
 #date{
-    font: 600 60px/61px "proxima-nova", Helvetica, Arial, Sans-Serif;
+    font: 800 88px/90px "proxima-nova", Helvetica, Arial, Sans-Serif;
     text-transform: uppercase;
     letter-spacing: 1.6px;
     text-align: center;
@@ -137,39 +140,118 @@ font-family: "museo-slab";
 }
 
 #hotel{
-    font: 600 27px/27px "proxima-nova", Helvetica, Arial, Sans-Serif;
+    font: 600 38px/38px "proxima-nova", Helvetica, Arial, Sans-Serif;
     text-transform: uppercase;
     letter-spacing: 1.6px;
     text-align: center;
-    margin-bottom: 25px;
+    margin-bottom: 42px;
 }
 
+
 #tickreg{
-    font: 200 17.4px/27px "proxima-nova", Helvetica, Arial, Sans-Serif;
+    font: 200 24px/24px "proxima-nova", Helvetica, Arial, Sans-Serif;
     font-style: italic;
     /* letter-spacing: 1.6px; */
     text-align: center;
-    margin-bottom: 25px;
+    margin-bottom: 37px;
 }
 
 
 #emailme{
-    font: 500 13px/34px "proxima-nova", Helvetica, Arial, Sans-Serif;
+font: 500 16px/43px "proxima-nova", Helvetica, Arial, Sans-Serif;
     text-transform: uppercase;
     letter-spacing: 0.8px;
     text-align: center;
     border: 1px solid white;
     display: block;
-    width: 156px;
+    width: 193px;
     margin: 0px auto;
     text-decoration: none;
-    color:white;
+    color: white;
 }
 
 
 a:hover #emailme{
-background-color: white;
+    background-color: white;
     color:black;
+}
+
+#subcon{clear:both;
+    font: 500 16px/43px "proxima-nova", Helvetica, Arial, Sans-Serif;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    text-align: center;
+    border: 1px solid white;
+    display: block;
+    width: 193px;
+    margin: 0px auto;
+    text-decoration: none;
+    color: white;
+}
+
+#watercolor > div.emreg > div:nth-child(4){margin-bottom:25px;}
+
+#watercolor > div.emreg > div > input[type="text"]{
+    -webkit-transition: all ease-in-out 0.15s;
+    -o-transition: all ease-in-out 0.15s;
+    transition: all ease-in-out 0.15s;
+    /*border:1px solid white;*/
+}
+
+input:focus {
+    outline: none;
+    /*border-color: #df9eed;*/
+    /*box-shadow: 0 0 10px #df9eed;*/
+}
+
+a:hover #subcon{
+    background-color: white;
+    color:black;
+}
+
+
+#join-email{
+    font: 200 24px/24px "proxima-nova", Helvetica, Arial, Sans-Serif;
+    font-style: italic;
+    /* letter-spacing: 1.6px; */
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+div.con-inpts{margin-bottom:23px;}
+
+div.emreg{
+    /*border: 1px solid rgba(255, 165, 0, 0.23);*/
+    width: 924px;
+    margin: 67px auto 90px;
+    display: block;
+    overflow: hidden;
+}
+div.emreg > div> label {
+    display: block;
+    clear: both;
+    font: 200 16px/35px "proxima-nova", Helvetica, Arial, Sans-Serif;
+    font-style: italic;
+    letter-spacing: 0.7px;
+    /* text-align: center; */
+    /* margin-bottom: 25px; */}
+div.emreg > div{float:left;}
+
+#watercolor > div.emreg > div > input[type="text"] {
+    font: 200 25px/16px "proxima-nova", Helvetica, Arial, Sans-Serif;
+    padding: 9px 12px;
+    width: 429px;
+    margin-right: 31px;
+}
+
+
+
+.box-header{
+    font: 800 95px/90px "proxima-nova", Helvetica, Arial, Sans-Serif;
+    text-transform: uppercase;
+    letter-spacing: 1.6px;
+    text-align: center;
+    margin-bottom: 8px;
 }
 
 
@@ -178,13 +260,13 @@ background-color: white;
 #pan-one-space{
     display: block;
     width: 1px;
-    height: 132px;
+    height: 220px;
     /* border: 1px solid white; */
 }
 
 #icon_head_a{
-    width: 287px;
-    margin: 0px auto 111px;
+    width: 450px;
+    margin: 14px auto 174px;
     display: block;
 }
 
@@ -195,11 +277,11 @@ background-color: white;
 width: 100%;
 padding: 0;
 margin: 0;
-background: black url(http://placehold.it/1100x250) center center no-repeat;
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
+/*background: black url(http://placehold.it/1100x250) center center no-repeat;*/
+/*-webkit-background-size: cover;*/
+/*-moz-background-size: cover;*/
+/*-o-background-size: cover;*/
+/*background-size: cover;*/
 }
 
 
@@ -207,7 +289,7 @@ background-size: cover;
 #texas{
     width: 100%;
     min-height: 100px;
-    padding: 40px;
+    padding: 40px 40px 66px;
     background: black url(/img/c/ICON9Austin4.jpg) center center no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -216,6 +298,7 @@ background-size: cover;
 }
 
 #watercolor{width:100%;min-height:100px;
+    padding: 52px;
 background: black url(/img/c/ggwaterccolor.png) center center no-repeat;
 -webkit-background-size: cover;
 -moz-background-size: cover;
@@ -224,14 +307,15 @@ background-size: cover;
 }
 
 #news{width:100%;min-height:100px;
-background: #A90C22 url(/img/c/red) center center no-repeat;
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
+    padding: 40px;
+background-color: #A90C22;
+    font: 600 22px/28px "proxima-nova", Helvetica, Arial, Sans-Serif;
+    letter-spacing: 0.7px;
+
 }
 
 #what{width:100%;min-height:100px;
+    padding: 40px;
 background: black url(/img/c/ggdrawing.jpg) center center no-repeat;
 -webkit-background-size: cover;
 -moz-background-size: cover;
@@ -240,7 +324,7 @@ background-size: cover;
 }
 
 #footer{width:100%;min-height:100px;
-background: black url(/img/c/black) center center no-repeat;
+background-color: black;
 -webkit-background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
@@ -250,15 +334,15 @@ background-size: cover;
 
 #texas > ul.social > li{
     float: left;
-    margin-right: 15px;
-    font-size: 24px;
+    margin-right: 18px;
+    font-size: 33px;
 }
 #texas > ul.social > li:nth-child(3){margin-right:0px;}
 
 ul.social{
     margin: 0px auto;
     /* display: inline-block; */
-    width: 90px;
+    width: 116px;
 }
 
 #texas > ul.social > li a{
@@ -266,9 +350,27 @@ ul.social{
 }
 
 #texas > ul.social > li a:hover{
-    color:yellow!important;
+    color:#ffdd18!important;
 }
 
 
 
+#watercolor > div.emreg > div.conmsg{
+    font: 600 22px/28px "proxima-nova", Helvetica, Arial, Sans-Serif;
+    letter-spacing: 0.7px;
+    margin-top: 85px;
+}
 
+#watercolor > div.emreg > div.conmsg > a{text-decoration:none;color:#ffdd18;}
+#watercolor > div.emreg > div.conmsg > a:hover{text-decoration:underline;}
+
+.cntrclmn{
+    width: 920px;
+    margin: 0px auto;
+    overflow: hidden;
+
+}
+.socboxes{
+    width: 421px;
+    margin-right: 36px;
+}
