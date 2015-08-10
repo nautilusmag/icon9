@@ -7,7 +7,7 @@ print $now - $mod;
 
 
 if(!isset($_GET["q"])) {
-    if (($now - $mod) < (120 * 3600)) {
+    if (($now - $mod) < (2 * 3600)) {//2 hrs
         die();
     }
 }
