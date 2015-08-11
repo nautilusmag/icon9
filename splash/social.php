@@ -39,7 +39,8 @@ $test="";$test = (string)$xml->channel->item[0]->title;
 $old->tmblr->title = (strlen($test) > 0)?$test:$old->tmblr->title;
 
 $test="";$test = (string) $xml->channel->item[0]->link;
-$old->tmblr->url = (strlen($test) > 0)?$test:$old->tmblr->url;
+$old->tmblr->link = (strlen($test) > 0)?$test:$old->tmblr->link;
+
 
 
 

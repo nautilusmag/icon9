@@ -125,7 +125,7 @@ font-family: "museo-slab";
  */
 
 #savedate{
-    font: 400 41px/41px "proxima-nova", Helvetica, Arial, Sans-Serif;
+    font: 400 38px/41px "proxima-nova", Helvetica, Arial, Sans-Serif;
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 13px;
@@ -149,7 +149,7 @@ font-family: "museo-slab";
 
 
 #tickreg{
-    font: 200 24px/24px "proxima-nova", Helvetica, Arial, Sans-Serif;
+    font: 200 22px/24px "proxima-nova", Helvetica, Arial, Sans-Serif;
     font-style: italic;
     /* letter-spacing: 1.6px; */
     text-align: center;
@@ -176,22 +176,24 @@ a:hover #emailme{
     color:black;
 }
 
-#subcon{clear:both;
-    font: 500 16px/43px "proxima-nova", Helvetica, Arial, Sans-Serif;
+input.subcon{clear:both;
+    font: 500 16px/43px "proxima-nova", Helvetica, Arial, Sans-Serif!important;
     text-transform: uppercase;
     letter-spacing: 0.8px;
     text-align: center;
     border: 1px solid white;
     display: block;
-    width: 193px;
+    width: 193px!important;
     margin: 0px auto;
     text-decoration: none;
     color: white;
+    background-color: transparent!important;
+    padding:0px!important;
 }
 
-#watercolor > div.emreg > div:nth-child(4){margin-bottom:25px;}
+#watercolor > div.emreg > div:nth-child(4){margin-bottom:32px;}
 
-#watercolor > div.emreg > div > input[type="text"]{
+#watercolor > div.emreg  input[type="text"]{
     -webkit-transition: all ease-in-out 0.15s;
     -o-transition: all ease-in-out 0.15s;
     transition: all ease-in-out 0.15s;
@@ -204,26 +206,29 @@ input:focus {
     /*box-shadow: 0 0 10px #df9eed;*/
 }
 
-a:hover #subcon{
-    background-color: white;
+input:hover.subcon{
+    background-color: white!important;
     color:black;
 }
 
+input.mce_inline_error{
+    background-color: rgb(255, 238, 161);
+}
 
 #join-email{
-    font: 200 24px/24px "proxima-nova", Helvetica, Arial, Sans-Serif;
+    font: 200 22px/24px "proxima-nova", Helvetica, Arial, Sans-Serif;
     font-style: italic;
     /* letter-spacing: 1.6px; */
     text-align: left;
-    margin-bottom: 25px;
+    margin-bottom: 33px;
 }
 
-div.con-inpts{margin-bottom:23px;}
+div.con-inpts{margin-bottom:31px;}
 
 div.emreg{
-    /*border: 1px solid rgba(255, 165, 0, 0.23);*/
-    width: 924px;
-    margin: 67px auto 90px;
+    /*border: 1px solid rgba(255, 165, 0, 0.23); */
+width: 895px;
+    margin: 75px auto 90px;
     display: block;
     overflow: hidden;
 }
@@ -237,24 +242,27 @@ div.emreg > div> label {
     /* margin-bottom: 25px; */}
 div.emreg > div{float:left;}
 
-#watercolor > div.emreg > div > input[type="text"] {
+#watercolor    input {
     font: 200 25px/16px "proxima-nova", Helvetica, Arial, Sans-Serif;
     padding: 9px 12px;
     width: 429px;
-    margin-right: 31px;
+    /*margin-right: 31px;*/
 }
 
-
+#mce-FNAME{margin-right:35px;}
 
 .box-header{
-    font: 800 95px/90px "proxima-nova", Helvetica, Arial, Sans-Serif;
+    font: 800 85px/90px "proxima-nova", Helvetica, Arial, Sans-Serif;
     text-transform: uppercase;
     letter-spacing: 1.6px;
     text-align: center;
     margin-bottom: 8px;
 }
 
-
+#news > div.box-header
+{
+    margin-bottom: 49px;
+}
 
 
 #pan-one-space{
@@ -265,8 +273,8 @@ div.emreg > div{float:left;}
 }
 
 #icon_head_a{
-    width: 450px;
-    margin: 14px auto 174px;
+    width: 403px;
+    margin: 14px auto 189px;
     display: block;
 }
 
@@ -290,16 +298,35 @@ margin: 0;
     width: 100%;
     min-height: 100px;
     padding: 40px 40px 66px;
-    background: black url(/img/c/ICON9Austin4.jpg) center center no-repeat;
+    background: black url(/img/c/900w_ICON9Austin4.jpg) center center no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
 
+div.twtext{
+    margin-top: 20px;
+    margin-bottom: 47px;
+}
+
+
+div.tmbltext{
+    margin-top: 20px;
+    margin-bottom: 47px;
+}
+
+a.tumbler,
+a.instagram,
+#twt > div > a{text-decoration: none; color:#FFCE44;}
+
+a:hover.tumbler,
+a:hover.instagram,
+#twt > div > a:hover{text-decoration: underline; }
+
 #watercolor{width:100%;min-height:100px;
     padding: 52px;
-background: black url(/img/c/ggwaterccolor.png) center center no-repeat;
+background: black url(/img/c/900w_ggwaterccolor.png) center center no-repeat;
 -webkit-background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
@@ -309,21 +336,34 @@ background-size: cover;
 #news{width:100%;min-height:100px;
     padding: 40px;
 background-color: #A90C22;
-    font: 600 22px/28px "proxima-nova", Helvetica, Arial, Sans-Serif;
+    font: 600 20px/1.6em "proxima-nova", Helvetica, Arial, Sans-Serif!important;
     letter-spacing: 0.7px;
 
 }
 
 #what{width:100%;min-height:100px;
     padding: 40px;
-background: black url(/img/c/ggdrawing.jpg) center center no-repeat;
+background: black url(/img/c/900w_ggdrawing.jpg) center center no-repeat;
+    font: 600 20px/1.6em "proxima-nova", Helvetica, Arial, Sans-Serif!important;
+    letter-spacing: 0.7px;
 -webkit-background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
 background-size: cover;
 }
 
-#footer{width:100%;min-height:100px;
+.whattext{
+    width: 846px;
+    margin: 0px auto;
+}
+
+div.copy{
+    font: 600 20px/1.6em "proxima-nova", Helvetica, Arial, Sans-Serif!important;
+    width:70px;
+    margin:12px auto 0px;
+}
+
+#footer{width:100%;min-height:40px;
 background-color: black;
 -webkit-background-size: cover;
 -moz-background-size: cover;
@@ -334,8 +374,8 @@ background-size: cover;
 
 #texas > ul.social > li{
     float: left;
-    margin-right: 18px;
-    font-size: 33px;
+    margin-right: 20px;
+    font-size: 32px;
 }
 #texas > ul.social > li:nth-child(3){margin-right:0px;}
 
@@ -355,14 +395,14 @@ ul.social{
 
 
 
-#watercolor > div.emreg > div.conmsg{
-    font: 600 22px/28px "proxima-nova", Helvetica, Arial, Sans-Serif;
+#watercolor div.emreg div.conmsg{
+    font: 600 20px/28px "proxima-nova", Helvetica, Arial, Sans-Serif;
     letter-spacing: 0.7px;
-    margin-top: 85px;
+    margin-top: 79px;
 }
 
-#watercolor > div.emreg > div.conmsg > a{text-decoration:none;color:#ffdd18;}
-#watercolor > div.emreg > div.conmsg > a:hover{text-decoration:underline;}
+#watercolor div.emreg div.conmsg  a{text-decoration:none;color:#ffdd18;}
+#watercolor div.emreg div.conmsg  a:hover{text-decoration:underline;}
 
 .cntrclmn{
     width: 920px;
@@ -373,4 +413,18 @@ ul.social{
 .socboxes{
     width: 421px;
     margin-right: 36px;
+}
+
+div.vimeo{margin: 37px auto 65px;
+width:957px;
+}
+
+#what > div.vimeo > iframe{height:538px!important;width:957px!important;}
+
+div#mce-success-response,
+div#mce-error-response{
+    padding:8px 0px;
+    font: 600 20px/28px "proxima-nova", Helvetica, Arial, Sans-Serif;
+    letter-spacing: 0.7px;
+
 }
