@@ -5,7 +5,13 @@ $mod = filemtime(__DIR__ . "/store.json");
 $now = strtotime("now");
 print $now - $mod;
 
-if(($now - $mod) < (120*3600)){die();}
+
+if(!isset($_GET["q"])) {
+    if (($now - $mod) < (2 * 3600)) {//2 hrs
+        die();
+    }
+}
+
 
 $old = json_decode(file_get_contents(__DIR__ . "/store.json"));
 
@@ -48,7 +54,9 @@ $fp = fopen(__DIR__ . "/store.json","wb");
 fwrite($fp,$content);
 fclose($fp);
 
-
+print "<pre>";
+print_r($old);
+print "</pre>";
 
 
 
